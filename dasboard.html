@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta>
+     <title>Sipintar</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+          google.charts.load('current', {
+               'packages': ['bar']
+          });
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+               var data = google.visualization.arrayToDataTable([
+                    ['2018', 'Alokasi', 'Penyaluran', 'Pencairan'],
+                    ['SD', 10360614, 6212724, 5873424],
+                    ['SMP', 4369968, 3121120, 2641374],
+                    ['SMA', 1367559, 1005709, 0],
+                    ['SMK', 1829167, 1509352, 111860]
+               ]);
+
+               var options = {
+                    annotations: {
+                         boxStyle: {
+                              rx: 100,
+                              ry: 100,
+                              // gradient: {
+                              //      // Start color for gradient.
+                              //      color1: '#fbf6a7',
+                              //      // Finish color for gradient.
+                              //      color2: '#33b679',
+                              //      // Where on the boundary to start and
+                              //      // end the color1/color2 gradient,
+                              //      // relative to the upper left corner
+                              //      // of the boundary.
+                              //      x1: '0%',
+                              //      y1: '0%',
+                              //      x2: '100%',
+                              //      y2: '100%',
+                              //      // If true, the boundary for x1,
+                              //      // y1, x2, and y2 is the box. If
+                              //      // false, it's the entire chart.
+                              //      useObjectBoundingBoxUnits: true
+                              // }
+                         }
+                    }
+               };
+
+               var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+               chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+     </script>
+     <header class="header">
+          <div>
+               <div class="sipintar ">
+                    <img src="images/Logo.jpg" width="50px">&nbsp Sipintar
+               </div>
+               <div class="login ">
+                    <a class="btn btn-warning" href="#" type="button">Login</a>
+               </div>
+          </div>
+     </header>
+</head>
+
+<body>
+
+     <input type="checkbox" id="check">
+     <label for="check">
+          <i class="fas fa-caret-right" id="btn"></i>
+          <i class="fas fa-caret-left" id="cancel"></i>
+     </label>
+     <div class="sidebar">
+          <!-- <li><a href="#"><i class="fas fa-qrcode">Perkembangan Pencairan</i></a></li> -->
+          <ul>
+               <li><a href="#">Perkembangan Pencairan &nbsp <i class="fas fa-angle-down"></i></a></li>
+               <li><a href="#">Penyaluran Dana PIP 2018 &nbsp <i class="fas fa-angle-down">
+                              <!-- <li>1</li>
+                         <li>2</li>
+                         <li>3</li> -->
+                         </i></a></li>
+               <li><a href="#">Penyaluran Dana PIP 2017 &nbsp<i class="fas fa-angle-down"></i></a></li>
+               <li><a href="#">Penyaluran Dana PIP 2016 &nbsp<i class="fas fa-angle-down"></i></a></li>
+               <li><a href="#">Penyaluran Dana PIP 2015 &nbsp<i class="fas fa-angle-down"></i></a></li>
+
+          </ul>
+     </div>
+     <div class="grafik row">
+          <div class="justify-content-center">
+               <div id="columnchart_material" style="width: 800px; height: 500px; text-align: center;"></div>
+
+          </div>
+     </div>
+     <section>
+
+     </section>
+
+</body>
+
+</html>
