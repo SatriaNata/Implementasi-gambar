@@ -12,7 +12,7 @@
           crossorigin="anonymous">
           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
           <header>
-               <div class="">
+               <div class="header">
                     <div class="sipintar ">
                          <img src="images/Logo.jpg" width="50px">&nbsp Sipintar
                     </div>
