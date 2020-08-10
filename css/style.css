@@ -3,9 +3,16 @@
      height: 100%;
      width: 100%;
 } */
+.wrapper {
+     border-bottom: 1px solid rgb(220, 232, 252);
+}
 
 .container-fluid {
      background-color: rgb(220, 232, 252);
+}
+
+header {
+     border-bottom: black;
 }
 
 /* .header {
@@ -37,19 +44,19 @@ footer {
 .sipintar {
      font-size: 20px;
      padding-left: 5%;
-     padding-top: 5px;
+     padding-top: 10px;
      float: left;
 }
 
 .login {
      font-size: 20px;
      padding-right: 5%;
-     padding-top: 5px;
+     padding-top: 10px;
      float: right;
 }
 
 .sidebar {
-     position: fixed;
+     position: absolute;
      left: -250px;
      width: 250px;
      height: 100%;

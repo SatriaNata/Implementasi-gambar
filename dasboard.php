@@ -16,19 +16,18 @@
      </head>
      <body>
           <header>
-               <div class="container-fluid bg-light">
+               <div class="wrapper container-fluid bg-light">
                     <div class="row justify-content-between">
                          <div class="col-md-12">
-                              <!-- <div class="bg-primary"> -->
-                                   <div class="sipintar">
-                                        <img src="images/Logo.jpg" width="50px">&nbsp Sipintar
-                                   </div>
-                                   <div class="login">
-                                        <a class="btn btn-warning" href="dasboardLogin.php" type="button">Login</a>
-                                   <!-- </div> -->
+                              <div class="sipintar">
+                                   <img src="images/Logo.jpg" width="50px">&nbsp Sipintar
+                              </div>
+                              <div class="login">
+                                   <a class="btn btn-warning" href="dasboardLogin.php" type="button">Login</a>
                               </div>
                          </div>
                     </div>
+                    <br>
                </div>
           </header>
           <div class="container-fluid bg-light">
