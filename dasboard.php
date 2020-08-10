@@ -11,6 +11,9 @@
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
           crossorigin="anonymous">
           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          
+     </head>
+     <body>
           <header>
                <div class="header">
                     <div class="sipintar ">
@@ -21,8 +24,6 @@
                     </div>
                </div>
           </header>
-     </head>
-     <body>
           <div class="container row">
                <div class="col-3">
                     <input type="checkbox" id="check">
